@@ -1,16 +1,8 @@
 {
   "name": "custom-redux",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "A lightweight custom Redux-like state management library for React",
-  "type": "module",
-  "main": "dist/index.cjs",
-  "module": "dist/index.esm.js",
-  "exports": {
-    ".": {
-      "import": "./dist/index.esm.js",
-      "require": "./dist/index.cjs"
-    }
-  },
+  "main": "dist/index.js",
   "scripts": {
     "build": "rollup -c"
   },
@@ -18,16 +10,15 @@
     "redux",
     "react",
     "state",
-    "esm",
     "store"
   ],
-  "author": "Your Name",
+  "author": "Piyush",
   "license": "MIT",
   "files": [
     "dist"
   ],
   "peerDependencies": {
-    "react": ">=17"
+    "react": ">=16.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.28.5",
