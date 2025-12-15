@@ -17,7 +17,7 @@ A lightweight, custom Redux-like state management library for React applications
 ## Installation
 
 ```bash
-npm install @uilib/custom-redux
+npm install custom-redux
 ```
 
 **Note:** This package requires React 17 or higher as a peer dependency.
@@ -27,7 +27,7 @@ npm install @uilib/custom-redux
 ### 1. Create a Store
 
 ```javascript
-import { createStore, combineReducers } from '@uilib/custom-redux';
+import { createStore, combineReducers } from 'custom-redux';
 
 // Define a reducer
 const counterReducer = (state = { count: 0 }, action) => {
@@ -55,7 +55,7 @@ const store = createStore(rootReducer, { counter: { count: 0 } });
 
 ```javascript
 import React from 'react';
-import { Provider } from '@uilib/custom-redux';
+import { Provider } from 'custom-redux';
 import App from './App';
 
 function Root() {
@@ -71,7 +71,7 @@ function Root() {
 
 ```javascript
 import React from 'react';
-import { Connect } from '@uilib/custom-redux';
+import { Connect } from 'custom-redux';
 
 // Map state to props
 const mapStateToProps = (state) => ({
@@ -216,7 +216,7 @@ store.dispatch((dispatch, getState) => {
 
 ```javascript
 // store.js
-import { createStore, combineReducers } from '@uilib/custom-redux';
+import { createStore, combineReducers } from 'custom-redux';
 
 const todosReducer = (state = [], action) => {
   switch (action.type) {
@@ -239,7 +239,7 @@ export const store = createStore(rootReducer, { todos: [] });
 ```javascript
 // App.js
 import React from 'react';
-import { Provider } from '@uilib/custom-redux';
+import { Provider } from 'custom-redux';
 import { store } from './store';
 import TodoList from './TodoList';
 
@@ -255,7 +255,7 @@ function App() {
 ```javascript
 // TodoList.js
 import React from 'react';
-import { Connect } from '@uilib/custom-redux';
+import { Connect } from 'custom-redux';
 
 const TodoList = ({ todos, addTodo, removeTodo }) => {
   const [input, setInput] = React.useState('');
