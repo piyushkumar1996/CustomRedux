@@ -1,6 +1,6 @@
 {
   "name": "custom-redux",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A lightweight custom Redux-like state management library for React",
   "main": "dist/index.js",
   "scripts": {
